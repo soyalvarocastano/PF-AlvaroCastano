@@ -13,13 +13,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.texto-llamada{
-    text-align: center;
-}
+    .texto-llamada{
+      text-align: center;
+  }
 
-.tabla-llamada {
+  .tabla-llamada {
     justify-content: center;
     text-align: center;
     display: flex;
@@ -28,12 +27,12 @@
     border-radius: 10px;
     color: white;
     margin-top: 10px;
+
+    .tabla-llamada-content{
+      padding: 10px;
+    }
   }
 
-  .tabla-llamada-content{
-    padding: 10px;
-  }
-  
   .tabla-llamada form div label,
   .tabla-llamada form div input,
   .tabla-llamada form div textarea,
@@ -41,7 +40,7 @@
     display: table-cell;
     padding: 10px;
   }
-  
+
   .tabla-llamada form div label {
     text-align: center;
   }
@@ -65,3 +64,14 @@
   .tabladellamada form div button:hover {
     background-color: #0b0b0b;
   }
+}
+
+
+
+
+
+  
+  
+
+  
+ 

@@ -1,13 +1,12 @@
-.navbar-nav .nav-link {
-    font-family: "Oswald", sans-serif;
-}
 
 .navbar{
-    font-family: "Oswald", sans-serif;
+    
     height: 70px;
+
+    .navbar-brand img{
+        height: 180px;
+        padding: 15px;
+    }
 }
 
-.navbar-brand img{
-    height: 180px;
-    padding: 15px;
-}
+

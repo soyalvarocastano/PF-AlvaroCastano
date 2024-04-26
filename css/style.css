@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,16 +6,10 @@
   font-family: "Oswald", sans-serif;
 }
 
-.navbar-nav .nav-link {
-  font-family: "Oswald", sans-serif;
-}
-
 .navbar {
-  font-family: "Oswald", sans-serif;
   height: 70px;
 }
-
-.navbar-brand img {
+.navbar .navbar-brand img {
   height: 180px;
   padding: 15px;
 }
@@ -30,6 +25,11 @@
 
 .dark-mode ul li a {
   color: white !important;
+}
+
+.btn {
+  background-color: #412779;
+  border-color: #9ac31d;
 }
 
 .fondo img {
@@ -57,8 +57,7 @@
   font-size: 16px;
   position: relative;
 }
-
-.hero-content {
+.hero .hero-content {
   background-color: rgba(0, 0, 0, 0.604);
   color: white;
   position: absolute;
@@ -70,8 +69,7 @@
   text-align: center;
   gap: 10px;
 }
-
-.hero-content a {
+.hero .hero-content a {
   text-decoration: none;
   color: black;
   background-color: white;
@@ -94,29 +92,47 @@
   background: linear-gradient(217deg, #412779, rgba(0, 0, 0, 0) 70.71%), linear-gradient(127deg, #9ac31d, rgba(0, 0, 0, 0.2862745098) 70.71%), linear-gradient(336deg, #412779, #9ac31d 70.71%);
   padding: 15px;
   gap: 10px;
-  font-family: "Oswald", sans-serif;
   min-height: 250px;
   max-height: 100%;
 }
-
-.service-container {
+.services-index .service-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 45px;
 }
-
-.service-title {
+.services-index .service-container .service-title {
   text-align: center;
   padding: 10px;
   margin-bottom: 20px;
 }
-
-.service {
+.services-index .service {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+.services-index .service .service-content {
+  color: black;
+  text-align: center;
+}
+.services-index .service .service-content .service-content h4 {
+  margin: 0;
+}
+.services-index .service-vermas {
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.service-vermas a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -134,61 +150,31 @@
   transition: transform 0.3s ease;
 }
 
-.service-content {
-  color: black;
-  text-align: center;
-}
-
-.service-content h4 {
-  margin: 0;
-}
-
-.service-vermas {
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-}
-
-.service-vermas a {
-  text-decoration: none;
-  color: white;
-  background-color: black;
-  border-radius: 10px;
-  font-size: 18px;
-  padding: 10px;
-  text-align: center;
-}
-
 .team {
   background-color: rgb(0, 0, 0);
-  font-family: "Oswald", sans-serif;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   padding: 20px;
   gap: 15px;
 }
-
-.team-title {
+.team .team-title {
   color: white;
   grid-column: span 4;
   text-align: center;
 }
-
-.team-content {
+.team .team-content {
   background-color: white;
   border-radius: 10px;
   padding: 15px;
   box-shadow: 7px 7px 7px #9ac31d;
 }
-
-.team-content h4,
-.team-content h3,
-.team-content p {
+.team .team-content .team-content h4,
+.team .team-content .team-content h3,
+.team .team-content .team-content p {
   margin: 5px;
   font-size: 16px;
 }
-
-.team-content1 {
+.team .team-content1 {
   background-color: white;
   border-radius: 10px;
   padding: 15px;
@@ -197,8 +183,7 @@
   gap: 10px;
   box-shadow: 7px 7px 7px #9ac31d;
 }
-
-.team-content1 a {
+.team .team-content1 a {
   text-decoration: none;
   color: white;
   background-color: black;
@@ -206,8 +191,7 @@
   padding: 5px;
   text-align: center;
 }
-
-.team-content img {
+.team .team-content img {
   max-width: 100%;
   height: 480px;
   object-fit: cover;
@@ -226,12 +210,10 @@
   text-align: center;
   color: white;
 }
-
-.proyecto-info {
+.proyecto .proyecto-info {
   grid-column: span 4;
 }
-
-.proyecto_1 {
+.proyecto .proyecto_1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -240,32 +222,8 @@
   background-color: blueviolet;
   padding: 10px;
 }
-
-.proyecto_2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  background-color: blueviolet;
-  padding: 10px;
-  grid-column: span 2;
-}
-
-.proyecto div {
-  text-align: center;
-  padding: 15px;
-}
-
-.proyecto_1 img {
+.proyecto .proyecto_1 img {
   width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.proyecto_2 img {
-  width: 550px;
   height: 250px;
   object-fit: cover;
   border-radius: 10px;
@@ -280,45 +238,39 @@
   gap: 15px;
   padding: 15px;
 }
-
-.services-page-title {
+.services-page .services-page-title {
   text-align: center;
   color: white;
 }
-
-.service-page-content1 {
+.services-page .service-page-content1 {
   background-color: rgb(65, 39, 121);
   display: flex;
   border-radius: 10px;
   overflow: hidden;
 }
-
-.service-page-content2 {
-  background-color: rgb(153, 195, 29);
-  display: flex;
-  border-radius: 10px;
-  overflow: hidden;
-  flex-direction: row-reverse;
-}
-
-.service-page-content3 {
-  background-color: aqua;
-  display: flex;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.service-info {
+.services-page .service-info {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   width: 50%;
 }
-
-.service-page-content1 img,
-.service-page-content2 img,
-.service-page-content3 img {
+.services-page .service-page-content2 {
+  background-color: rgb(153, 195, 29);
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-direction: row-reverse;
+}
+.services-page .service-page-content3 {
+  background-color: aqua;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.services-page .service-page-content1 img,
+.services-page .service-page-content2 img,
+.services-page .service-page-content3 img {
   width: 50%;
   height: 250px;
   object-fit: cover;
@@ -334,32 +286,28 @@
   color: white;
   gap: 15px;
 }
-
-.team-page-title {
+.team-page .team-page-title {
   text-align: center;
 }
-
-.team-profile img {
-  width: 25%;
-  height: 450px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.team-profile {
+.team-page .team-profile {
   display: flex;
   border-radius: 10px;
   background-color: blueviolet;
   padding: 10px;
 }
-
-.team-profile-info {
+.team-page .team-profile .team-profile-info {
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 75%;
   padding: 20px;
   gap: 20px;
+}
+.team-page .team-profile img {
+  width: 25%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .titulo-llamada {
@@ -378,12 +326,10 @@
   flex-direction: column;
   align-items: center;
 }
-
-.texto-llamada {
+.agendar-llamada .texto-llamada {
   text-align: center;
 }
-
-.tabla-llamada {
+.agendar-llamada .tabla-llamada {
   justify-content: center;
   text-align: center;
   display: flex;
@@ -393,40 +339,34 @@
   color: white;
   margin-top: 10px;
 }
-
-.tabla-llamada-content {
+.agendar-llamada .tabla-llamada .tabla-llamada-content {
   padding: 10px;
 }
-
-.tabla-llamada form div label,
-.tabla-llamada form div input,
-.tabla-llamada form div textarea,
-.tabla-llamada form div button {
+.agendar-llamada .tabla-llamada form div label,
+.agendar-llamada .tabla-llamada form div input,
+.agendar-llamada .tabla-llamada form div textarea,
+.agendar-llamada .tabla-llamada form div button {
   display: table-cell;
   padding: 10px;
 }
-
-.tabla-llamada form div label {
+.agendar-llamada .tabla-llamada form div label {
   text-align: center;
 }
-
-.tabla-llamada form div input,
-.tabla-llamada form div textarea {
+.agendar-llamada .tabla-llamada form div input,
+.agendar-llamada .tabla-llamada form div textarea {
   width: calc(100% - 10px);
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
 }
-
-.tabla-llamada form div button {
+.agendar-llamada .tabla-llamada form div button {
   background-color: #3f5440;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
-
-.tabladellamada form div button:hover {
+.agendar-llamada .tabladellamada form div button:hover {
   background-color: #0b0b0b;
 }
 

@@ -6,31 +6,38 @@
     padding: 15px;
     color: white;
     gap: 15px;
+
+    .team-page-title{ 
+        text-align: center;
+    }
+
+    .team-profile{
+        display: flex;
+        border-radius: 10px;
+        background-color: blueviolet;
+        padding: 10px;
+
+        .team-profile-info{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 75%;
+            padding: 20px;
+            gap: 20px;
+        }
+    }
+
+    .team-profile img{
+        width: 25%;
+        height: 450px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
 }
 
-.team-page-title{ 
-    text-align: center;
-}
 
-.team-profile img{
-    width: 25%;
-    height: 450px;
-    object-fit: cover;
-    border-radius: 10px;
-}
 
-.team-profile{
-    display: flex;
-    border-radius: 10px;
-    background-color: blueviolet;
-    padding: 10px;
-}
 
-.team-profile-info{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 75%;
-    padding: 20px;
-    gap: 20px;
-}
+
+
+

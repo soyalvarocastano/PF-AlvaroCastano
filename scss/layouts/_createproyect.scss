@@ -1,5 +1,5 @@
 .proyecto{
-    background-color: rgb(0, 0, 0);
+    background-color: $base-color;
     font-family: "Oswald", sans-serif;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -20,15 +20,74 @@
         align-items: center;
         justify-content: center;
         border-radius: 10px;
-        background-color: blueviolet;
+        background: linear-gradient(145deg, #320368, #f7401c);
         padding: 10px;
     }
 
     .proyecto_1 img{
-        width: 250px;
+        width: 290px;
         height: 250px;
         object-fit: cover;
         border-radius: 10px;
+    }
+}
+
+@media (max-width: 1170px) {
+    .proyecto {
+        grid-template-columns: 1fr; 
+    }
+
+    .proyecto-info {
+        grid-column: auto; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 930px) {
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proyecto-info {
+        grid-column: auto; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proyecto-info {
+        grid-column: auto; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 414px) {
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proyecto-info {
+        grid-column: auto; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 390px) {
+    .proyecto {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .proyecto-info {
+        grid-column: auto; 
+        text-align: center;
     }
 }
 

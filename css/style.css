@@ -14,6 +14,16 @@
   padding: 15px;
 }
 
+@media (max-width: 767px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+  }
+  .navbar-brand img {
+    height: 100px;
+  }
+}
 .dark-mode {
   background-color: black;
   color: white;
@@ -28,8 +38,11 @@
 }
 
 .btn {
-  background-color: #412779;
-  border-color: #9ac31d;
+  background-color: #f7401c;
+  border-color: #f4b20c;
+}
+.btn:hover {
+  background-color: rgba(50, 3, 104, 0.856);
 }
 
 .fondo img {
@@ -78,6 +91,10 @@
   text-align: center;
   width: 180px;
   margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+.hero .hero-content a:hover {
+  transform: scale(1.1);
 }
 
 .hero img {
@@ -86,10 +103,21 @@
   object-fit: cover;
 }
 
+@media (max-width: 510px) {
+  .hero-content {
+    padding: 5px;
+  }
+  .hero-content h1 {
+    font-size: 24px;
+  }
+  .hero-content h2 {
+    font-size: 20px;
+  }
+}
 .services-index {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(217deg, #412779, rgba(0, 0, 0, 0) 70.71%), linear-gradient(127deg, #9ac31d, rgba(0, 0, 0, 0.2862745098) 70.71%), linear-gradient(336deg, #412779, #9ac31d 70.71%);
+  background: linear-gradient(145deg, rgba(50, 3, 104, 0.856), rgba(247, 64, 28, 0.938), rgba(244, 178, 12, 0.681)), url("../../images/imagen fondo 1.jpg");
   padding: 15px;
   gap: 10px;
   min-height: 250px;
@@ -112,6 +140,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  transition: transform 0.3s ease;
+}
+.services-index .service:hover {
+  transform: scale(1.2);
 }
 .services-index .service .service-content {
   color: black;
@@ -140,7 +172,7 @@
   width: auto;
   max-width: 100%;
   height: auto;
-  max-height: 150px;
+  max-height: 110px;
   object-fit: contain;
   margin-bottom: 10px;
 }
@@ -166,7 +198,12 @@
   background-color: white;
   border-radius: 10px;
   padding: 15px;
-  box-shadow: 7px 7px 7px #9ac31d;
+  box-shadow: 7px 7px 7px #f7401c;
+  transition: transform 0.3s ease;
+}
+.team .team-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 7px 7px 7px #f4b20c;
 }
 .team .team-content .team-content h4,
 .team .team-content .team-content h3,
@@ -181,7 +218,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  box-shadow: 7px 7px 7px #9ac31d;
+  box-shadow: 7px 7px 7px #f4b20c;
 }
 .team .team-content1 a {
   text-decoration: none;
@@ -198,8 +235,46 @@
   border-radius: 10px;
 }
 
+@media (max-width: 950px) {
+  .team {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .team {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 580px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+  }
+  .team-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .team-title {
+    grid-column: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 390px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+  }
+  .team-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .team-title {
+    grid-column: auto;
+    text-align: center;
+  }
+}
 .proyecto {
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
   font-family: "Oswald", sans-serif;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -219,16 +294,65 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background-color: blueviolet;
+  background: linear-gradient(145deg, #320368, #f7401c);
   padding: 10px;
 }
 .proyecto .proyecto_1 img {
-  width: 250px;
+  width: 290px;
   height: 250px;
   object-fit: cover;
   border-radius: 10px;
 }
 
+@media (max-width: 1170px) {
+  .proyecto {
+    grid-template-columns: 1fr;
+  }
+  .proyecto-info {
+    grid-column: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 930px) {
+  .proyecto {
+    display: flex;
+    flex-direction: column;
+  }
+  .proyecto-info {
+    grid-column: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .proyecto {
+    display: flex;
+    flex-direction: column;
+  }
+  .proyecto-info {
+    grid-column: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 414px) {
+  .proyecto {
+    display: flex;
+    flex-direction: column;
+  }
+  .proyecto-info {
+    grid-column: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 390px) {
+  .proyecto {
+    display: flex;
+    flex-direction: column;
+  }
+  .proyecto-info {
+    grid-column: auto;
+    text-align: center;
+  }
+}
 .services-page {
   background-color: rgb(0, 0, 0);
   font-family: "Oswald", sans-serif;
@@ -243,10 +367,14 @@
   color: white;
 }
 .services-page .service-page-content1 {
-  background-color: rgb(65, 39, 121);
+  background-color: #f7401c;
   display: flex;
   border-radius: 10px;
   overflow: hidden;
+  padding: 10px;
+  gap: 10px;
+  color: white;
+  transition: transform 0.3s ease;
 }
 .services-page .service-info {
   display: flex;
@@ -256,17 +384,25 @@
   width: 50%;
 }
 .services-page .service-page-content2 {
-  background-color: rgb(153, 195, 29);
+  background-color: #f4b20c;
   display: flex;
   border-radius: 10px;
   overflow: hidden;
   flex-direction: row-reverse;
+  padding: 10px;
+  gap: 10px;
+  color: white;
+  transition: transform 0.3s ease;
 }
 .services-page .service-page-content3 {
-  background-color: aqua;
+  background-color: #f7401c;
   display: flex;
   border-radius: 10px;
   overflow: hidden;
+  padding: 10px;
+  gap: 10px;
+  color: white;
+  transition: transform 0.3s ease;
 }
 .services-page .service-page-content1 img,
 .services-page .service-page-content2 img,
@@ -275,6 +411,7 @@
   height: 250px;
   object-fit: cover;
   border-radius: 10px;
+  box-shadow: 7px 7px 7px #f4b20c;
 }
 
 .team-page {
@@ -292,19 +429,19 @@
 .team-page .team-profile {
   display: flex;
   border-radius: 10px;
-  background-color: blueviolet;
-  padding: 10px;
+  background-color: #320368;
+  padding: 15px;
 }
 .team-page .team-profile .team-profile-info {
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 75%;
-  padding: 20px;
+  padding: 10px;
   gap: 20px;
 }
 .team-page .team-profile img {
-  width: 25%;
+  width: 20%;
   height: 450px;
   object-fit: cover;
   border-radius: 10px;
@@ -334,7 +471,7 @@
   text-align: center;
   display: flex;
   width: 25%;
-  background: linear-gradient(to bottom right, #371a7c, #000);
+  background: linear-gradient(to bottom right, #320368, #f7401c, #f4b20c);
   border-radius: 10px;
   color: white;
   margin-top: 10px;

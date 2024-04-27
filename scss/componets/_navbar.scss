@@ -9,4 +9,15 @@
     }
 }
 
+@media (max-width: 767px) {
 
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 150px; 
+    }
+  
+    .navbar-brand img {
+      height: 100px; 
+    }
+  }

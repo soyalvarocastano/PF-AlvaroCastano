@@ -32,6 +32,11 @@
     text-align: center;
     width: 180px;
     margin: 0 auto;
+    transition: transform 0.3s ease;
+
+    &:hover{
+        transform: scale(1.1);  
+    }
 }
 }
 
@@ -41,15 +46,24 @@
     object-fit: cover;
 }
 
+@media (max-width: 510px) {
+    .hero-content {
+      padding: 5px; 
+    }
+    
+    .hero-content h1 {
+      font-size: 24px; 
+    }
+  
+    .hero-content h2 {
+      font-size: 20px; 
+    }
+  }
+
 .services-index{
     display: flex;
     flex-direction: column;
-    background: linear-gradient(
-        217deg,
-        #412779,
-        #00000000 70.71%
-      ), linear-gradient(127deg, #9ac31d, #00000049 70.71%),
-      linear-gradient(336deg, #412779, #9ac31d 70.71%);
+    background: linear-gradient(145deg, rgba(50, 3, 104, 0.856), rgba(247, 64, 28, 0.938), rgba(244, 178, 12, 0.681)), url("../../images/imagen fondo 1.jpg");
     padding: 15px ;
     gap: 10px;
     min-height: 250px;
@@ -74,6 +88,11 @@
         justify-content: center;
         align-items: center; 
         text-align: center; 
+        transition: transform 0.3s ease;
+
+        &:hover{
+            transform: scale(1.2);  
+        }
 
         
     .service-content{
@@ -108,7 +127,7 @@
     width: auto; 
     max-width: 100%; 
     height: auto; 
-    max-height: 150px; 
+    max-height: 110px; 
     object-fit: contain; 
     margin-bottom: 10px; 
 }
@@ -137,7 +156,13 @@
         background-color: white;
         border-radius: 10px;
         padding: 15px;
-        box-shadow: 7px 7px 7px #9ac31d;
+        box-shadow: 7px 7px 7px #f7401c;
+        transition: transform 0.3s ease;
+
+        &:hover{
+            transform: translateY(-10px);
+            box-shadow: 7px 7px 7px #f4b20c;
+        }
 
         .team-content h4,
         .team-content h3,
@@ -154,7 +179,7 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-        box-shadow: 7px 7px 7px  #9ac31d ;
+        box-shadow: 7px 7px 7px  #f4b20c ;
     }
 
     .team-content1 a{
@@ -172,6 +197,53 @@
             object-fit: cover;
             border-radius: 10px;
         }
+}
+
+@media (max-width: 950px) {
+    .team {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 768px) {
+    .team {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 580px) {
+    .team {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team-content {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    .team-title {
+        grid-column: auto; 
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .team {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team-content {
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+
+    .team-title {
+        grid-column: auto; 
+        text-align: center;
+    }
 }
 
 

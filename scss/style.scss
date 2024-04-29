@@ -1,5 +1,6 @@
 @import "base/vars";
 @import "base/reset";
+@import "base/utilities";
 @import "componets/navbar";
 @import "componets/footer";
 @import "componets/fondo";
@@ -9,4 +10,5 @@
 @import "layouts/service";
 @import "layouts/team";
 @import "layouts/call";
+@import "layouts/mediaqueries"
 

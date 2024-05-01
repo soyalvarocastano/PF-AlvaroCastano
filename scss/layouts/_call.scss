@@ -1,70 +1,69 @@
 .titulo-llamada{
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  padding: 10px;
 }
 
 .agendar-llamada{
-    background-color: black;
-    color: white;
-    font-family: "Oswald", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  @include flex(column,center,center);
+  background-color: black;
+  color: white;
+  font-family: "Oswald", sans-serif;
 
-    .texto-llamada{
-      text-align: center;
-  }
-
-  .tabla-llamada {
-    justify-content: center;
+  .texto-llamada{
     text-align: center;
-    display: flex;
-    width: 25%;
-    background: linear-gradient(to bottom right, #320368, #f7401c, #f4b20c);
-    border-radius: 10px;
-    color: white;
-    margin-top: 10px;
+}
 
-    .tabla-llamada-content{
-      padding: 10px;
-    }
-  }
+.tabla-llamada {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  width: 25%;
+  background: linear-gradient(to bottom right, #320368, #f7401c, #f4b20c);
+  border-radius: 10px;
+  color: white;
+  margin-top: 10px;
 
-  .tabla-llamada form div label,
-  .tabla-llamada form div input,
-  .tabla-llamada form div textarea,
-  .tabla-llamada form div button {
-    display: table-cell;
+  .tabla-llamada-content{
     padding: 10px;
   }
-
-  .tabla-llamada form div label {
-    text-align: center;
-  }
-  
-  .tabla-llamada form div input,
-  .tabla-llamada form div textarea {
-    width: calc(100% - 10px);
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  .tabla-llamada form div button {
-    background-color: #3f5440;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .tabladellamada form div button:hover {
-    background-color: #0b0b0b;
-  }
 }
+
+.tabla-llamada form div label,
+.tabla-llamada form div input,
+.tabla-llamada form div textarea,
+.tabla-llamada form div button {
+  display: table-cell;
+  padding: 10px;
+}
+
+.tabla-llamada form div label {
+  text-align: center;
+}
+
+.tabla-llamada form div input,
+.tabla-llamada form div textarea {
+  width: calc(100% - 10px);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.tabla-llamada form div button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tabladellamada form div button:hover {
+  background-color: #0b0b0b;
+}
+}
+
 
 
 

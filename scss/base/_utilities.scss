@@ -14,3 +14,17 @@
 
 
 /* mixin*/
+
+@mixin flex($direction, $justify, $aling) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+@mixin grid($display, $grid-template-columns, $padding, $gap) {
+    display: $display;
+    grid-template-columns: $grid-template-columns;
+    padding: $padding;
+    gap: $gap;
+}

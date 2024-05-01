@@ -6,6 +6,18 @@
   font-family: "Oswald", sans-serif;
 }
 
+/* extends */
+/* .contenedor-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+} */
+/* se utiliza de la siguiente manera 
+.clase-aaa{
+    @extends .contenedor.flex;
+    ]*/
+/* mixin*/
 .navbar {
   height: 70px;
 }
@@ -103,17 +115,6 @@
   object-fit: cover;
 }
 
-@media (max-width: 510px) {
-  .hero-content {
-    padding: 5px;
-  }
-  .hero-content h1 {
-    font-size: 24px;
-  }
-  .hero-content h2 {
-    font-size: 20px;
-  }
-}
 .services-index {
   display: flex;
   flex-direction: column;
@@ -235,44 +236,6 @@
   border-radius: 10px;
 }
 
-@media (max-width: 950px) {
-  .team {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 768px) {
-  .team {
-    grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 580px) {
-  .team {
-    display: flex;
-    flex-direction: column;
-  }
-  .team-content {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .team-title {
-    grid-column: auto;
-    text-align: center;
-  }
-}
-@media (max-width: 390px) {
-  .team {
-    display: flex;
-    flex-direction: column;
-  }
-  .team-content {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .team-title {
-    grid-column: auto;
-    text-align: center;
-  }
-}
 .proyecto {
   background-color: #000000;
   font-family: "Oswald", sans-serif;
@@ -291,8 +254,8 @@
 .proyecto .proyecto_1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   border-radius: 10px;
   background: linear-gradient(145deg, #320368, #f7401c);
   padding: 10px;
@@ -303,56 +266,10 @@
   object-fit: cover;
   border-radius: 10px;
 }
+.proyecto .centro {
+  grid-column: span 2;
+}
 
-@media (max-width: 1170px) {
-  .proyecto {
-    grid-template-columns: 1fr;
-  }
-  .proyecto-info {
-    grid-column: auto;
-    text-align: center;
-  }
-}
-@media (max-width: 930px) {
-  .proyecto {
-    display: flex;
-    flex-direction: column;
-  }
-  .proyecto-info {
-    grid-column: auto;
-    text-align: center;
-  }
-}
-@media (max-width: 768px) {
-  .proyecto {
-    display: flex;
-    flex-direction: column;
-  }
-  .proyecto-info {
-    grid-column: auto;
-    text-align: center;
-  }
-}
-@media (max-width: 414px) {
-  .proyecto {
-    display: flex;
-    flex-direction: column;
-  }
-  .proyecto-info {
-    grid-column: auto;
-    text-align: center;
-  }
-}
-@media (max-width: 390px) {
-  .proyecto {
-    display: flex;
-    flex-direction: column;
-  }
-  .proyecto-info {
-    grid-column: auto;
-    text-align: center;
-  }
-}
 .services-page {
   background-color: rgb(0, 0, 0);
   font-family: "Oswald", sans-serif;
@@ -360,7 +277,6 @@
   flex-direction: column;
   padding: 15px;
   gap: 15px;
-  padding: 15px;
 }
 .services-page .services-page-title {
   text-align: center;
@@ -456,12 +372,13 @@
 }
 
 .agendar-llamada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: black;
   color: white;
   font-family: "Oswald", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .agendar-llamada .texto-llamada {
   text-align: center;
@@ -497,7 +414,7 @@
   box-sizing: border-box;
 }
 .agendar-llamada .tabla-llamada form div button {
-  background-color: #3f5440;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 4px;
@@ -505,6 +422,105 @@
 }
 .agendar-llamada .tabladellamada form div button:hover {
   background-color: #0b0b0b;
+}
+
+@media (max-width: 510px) {
+  .hero-content {
+    padding: 5px;
+  }
+  .hero-content h1 {
+    font-size: 24px;
+  }
+  .hero-content h2 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 950px) {
+  .team {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .team {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 580px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+  }
+  .team-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .team-title {
+    grid-column: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 390px) {
+  .team {
+    display: flex;
+    flex-direction: column;
+  }
+  .team-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .team-title {
+    grid-column: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 1170px) {
+  .proyecto {
+    grid-template-columns: 1fr;
+  }
+  .proyecto-info {
+    grid-column: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 930px) {
+  .proyecto {
+    display: flex;
+    flex-direction: column;
+  }
+  .proyecto-info {
+    grid-column: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .proyecto {
+    display: flex;
+    flex-direction: column;
+  }
+  .proyecto-info {
+    grid-column: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 414px) {
+  .proyecto {
+    display: flex;
+    flex-direction: column;
+  }
+  .proyecto-info {
+    grid-column: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 390px) {
+  .proyecto {
+    display: flex;
+    flex-direction: column;
+  }
+  .proyecto-info {
+    grid-column: auto;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

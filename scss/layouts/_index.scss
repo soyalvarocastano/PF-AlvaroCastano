@@ -1,9 +1,5 @@
 .hero{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column,center,center);
     width: 100%;
     min-height: 250px;
     max-height: 100%;
@@ -46,19 +42,7 @@
     object-fit: cover;
 }
 
-@media (max-width: 510px) {
-    .hero-content {
-      padding: 5px; 
-    }
-    
-    .hero-content h1 {
-      font-size: 24px; 
-    }
-  
-    .hero-content h2 {
-      font-size: 20px; 
-    }
-  }
+
 
 .services-index{
     display: flex;
@@ -83,10 +67,7 @@
     }
 
     .service {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; 
+        @include flex(column,center,center); 
         text-align: center; 
         transition: transform 0.3s ease;
 
@@ -141,10 +122,8 @@
 
 .team{
     background-color: rgb(0, 0, 0);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    padding: 20px;
-    gap: 15px;
+    @include grid(grid,repeat(auto-fit, minmax(320px, 1fr)),20px,15px); 
+    
 
     .team-title{
         color: white;
@@ -199,52 +178,7 @@
         }
 }
 
-@media (max-width: 950px) {
-    .team {
-        grid-template-columns: 1fr; 
-    }
-}
 
-@media (max-width: 768px) {
-    .team {
-        grid-template-columns: 1fr; 
-    }
-}
-
-@media (max-width: 580px) {
-    .team {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .team-content {
-        width: 100%;
-        margin-bottom: 20px; 
-    }
-
-    .team-title {
-        grid-column: auto; 
-        text-align: center;
-    }
-}
-
-
-@media (max-width: 390px) {
-    .team {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .team-content {
-        width: 100%;
-        margin-bottom: 20px; 
-    }
-
-    .team-title {
-        grid-column: auto; 
-        text-align: center;
-    }
-}
 
 
 

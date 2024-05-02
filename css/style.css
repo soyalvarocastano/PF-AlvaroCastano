@@ -6,18 +6,6 @@
   font-family: "Oswald", sans-serif;
 }
 
-/* extends */
-/* .contenedor-flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-} */
-/* se utiliza de la siguiente manera 
-.clase-aaa{
-    @extends .contenedor.flex;
-    ]*/
-/* mixin*/
 .navbar {
   height: 70px;
 }

@@ -28,8 +28,16 @@
 
   .tabla-llamada-content{
     padding: 10px;
+    width: 100%;
   }
 }
+
+.form div {
+  display: block; 
+  width: 100%; 
+  margin-bottom: 10px;
+}
+
 
 .tabla-llamada form div label,
 .tabla-llamada form div input,
@@ -37,6 +45,7 @@
 .tabla-llamada form div button {
   display: table-cell;
   padding: 10px;
+  width: 100%;
 }
 
 .tabla-llamada form div label {
@@ -45,7 +54,6 @@
 
 .tabla-llamada form div input,
 .tabla-llamada form div textarea {
-  width: calc(100% - 10px);
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -59,9 +67,6 @@
   cursor: pointer;
 }
 
-.tabladellamada form div button:hover {
-  background-color: #0b0b0b;
-}
 }
 
 

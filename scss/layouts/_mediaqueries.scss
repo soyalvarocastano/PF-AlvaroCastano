@@ -118,3 +118,91 @@
     }
 }
 
+@media (max-width: 768px) {
+    .team-page {
+        .team-profile {
+            flex-direction: column; 
+            align-items: center; 
+
+            img {
+                width: 60%; 
+            }
+
+            .team-profile-info {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .team-page {
+        padding: 10px; 
+        gap: 10px; 
+
+        .team-profile {
+            img {
+                width: 80%; 
+            }
+
+            .team-profile-info {
+                text-align: left; 
+                padding: 5px; 
+            }
+        }
+    }
+
+    .team-page-title {
+        h1 {
+            font-size: 1.5rem; 
+        }
+        h2 {
+            font-size: 1.2rem; 
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .tabla-llamada {
+        width: 50%;
+    }
+
+    .agendar-llamada {
+        padding: 20px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .tabla-llamada {
+        width: 90%; 
+        flex-direction: column; 
+
+        form div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        form div label,
+        form div input,
+        form div textarea,
+        form div button {
+            width: 100%; 
+        }
+
+        form div input,
+        form div textarea {
+            padding: 8px; 
+        }
+
+        form div button {
+            padding: 12px 20px; 
+            font-size: 1rem; 
+        }
+    }
+}
+

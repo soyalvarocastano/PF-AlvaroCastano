@@ -1,6 +1,6 @@
 .titulo-llamada{
-  background-color: black;
-  color: white;
+  background-color: $base-color;
+  color: $secondary-base-color;
   text-align: center;
   font-family: "Oswald", sans-serif;
   padding: 10px;
@@ -8,8 +8,8 @@
 
 .agendar-llamada{
   @include flex(column,center,center);
-  background-color: black;
-  color: white;
+  background-color: $base-color;
+  color: $secondary-base-color;
   font-family: "Oswald", sans-serif;
 
   .texto-llamada{
@@ -21,9 +21,9 @@
   text-align: center;
   display: flex;
   width: 25%;
-  background: linear-gradient(to bottom right, #320368, #f7401c, #f4b20c);
+  background: linear-gradient(to bottom right, $primari-color, $secondary-color, $effect-color);
   border-radius: 10px;
-  color: white;
+  color: $secondary-base-color;
   margin-top: 10px;
 
   .tabla-llamada-content{
@@ -54,14 +54,14 @@
 
 .tabla-llamada form div input,
 .tabla-llamada form div textarea {
-  border: 1px solid #ccc;
+  border: 1px solid $secondary-base-color;
   border-radius: 4px;
   box-sizing: border-box;
 }
 
 .tabla-llamada form div button {
-  background-color: black;
-  color: white;
+  background-color: $base-color;
+  color: $secondary-base-color;
   border: none;
   border-radius: 4px;
   cursor: pointer;

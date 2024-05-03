@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: $secondary-base-color;
 
     .proyecto-info{
         grid-column: span 4;
@@ -14,7 +14,7 @@
     .proyecto_1{
         @include flex(column,center,center);
         border-radius: 10px;
-        background: linear-gradient(145deg, #320368, #f7401c);
+        background: linear-gradient(145deg, $primari-color, $secondary-color);
         padding: 10px;
     }
 

@@ -12,10 +12,13 @@
 }
 
 .btn {
-    background-color: #f7401c;
-    border-color:#f4b20c ;
+    background-color: white;
+    border-color:black ;
+    color: black;
 
     &:hover{ 
-    background-color: rgba(50, 3, 104, 0.856) ;
+    background-color: black ;
+    color: white;
+    border-color: white;
     }
 }

@@ -38,11 +38,14 @@
 }
 
 .btn {
-  background-color: #f7401c;
-  border-color: #f4b20c;
+  background-color: white;
+  border-color: black;
+  color: black;
 }
 .btn:hover {
-  background-color: rgba(50, 3, 104, 0.856);
+  background-color: black;
+  color: white;
+  border-color: white;
 }
 
 .fondo img {
@@ -104,8 +107,6 @@
 }
 
 .services-index {
-  display: flex;
-  flex-direction: column;
   background: linear-gradient(145deg, rgba(50, 3, 104, 0.856), rgba(247, 64, 28, 0.938), rgba(244, 178, 12, 0.681)), url("../../images/imagen fondo 1.jpg");
   padding: 15px;
   gap: 10px;
@@ -187,12 +188,10 @@
   background-color: white;
   border-radius: 10px;
   padding: 15px;
-  box-shadow: 7px 7px 7px #f7401c;
   transition: transform 0.3s ease;
 }
 .team .team-content:hover {
   transform: translateY(-10px);
-  box-shadow: 7px 7px 7px #f4b20c;
 }
 .team .team-content .team-content h4,
 .team .team-content .team-content h3,
@@ -207,7 +206,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  box-shadow: 7px 7px 7px #f4b20c;
 }
 .team .team-content1 a {
   text-decoration: none;
@@ -271,7 +269,7 @@
   color: white;
 }
 .services-page .service-page-content1 {
-  background-color: #f7401c;
+  background-color: black;
   display: flex;
   border-radius: 10px;
   overflow: hidden;
@@ -279,47 +277,24 @@
   gap: 10px;
   color: white;
   transition: transform 0.3s ease;
+  box-shadow: 7px 7px 7px white;
 }
 .services-page .service-info {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  width: 50%;
+  width: 60%;
 }
-.services-page .service-page-content2 {
-  background-color: #f4b20c;
-  display: flex;
-  border-radius: 10px;
-  overflow: hidden;
-  flex-direction: row-reverse;
-  padding: 10px;
-  gap: 10px;
-  color: white;
-  transition: transform 0.3s ease;
-}
-.services-page .service-page-content3 {
-  background-color: #f7401c;
-  display: flex;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 10px;
-  gap: 10px;
-  color: white;
-  transition: transform 0.3s ease;
-}
-.services-page .service-page-content1 img,
-.services-page .service-page-content2 img,
-.services-page .service-page-content3 img {
-  width: 50%;
+.services-page .service-page-content1 img {
+  width: 40%;
   height: 250px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 7px 7px 7px #f4b20c;
 }
 
 .team-page {
-  background-color: rgba(0, 0, 0, 0.932);
+  background-color: rgb(0, 0, 0);
   font-family: "Oswald", sans-serif;
   display: flex;
   flex-direction: column;
@@ -333,8 +308,9 @@
 .team-page .team-profile {
   display: flex;
   border-radius: 10px;
-  background-color: #320368;
+  background-color: black;
   padding: 15px;
+  box-shadow: 7px 7px 7px white;
 }
 .team-page .team-profile .team-profile-info {
   display: flex;
@@ -346,7 +322,7 @@
 }
 .team-page .team-profile img {
   width: 20%;
-  height: 450px;
+  height: 400px;
   object-fit: cover;
   border-radius: 10px;
 }

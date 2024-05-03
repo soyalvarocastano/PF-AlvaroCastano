@@ -42,11 +42,7 @@
     object-fit: cover;
 }
 
-
-
 .services-index{
-    display: flex;
-    flex-direction: column;
     background: linear-gradient(145deg, rgba(50, 3, 104, 0.856), rgba(247, 64, 28, 0.938), rgba(244, 178, 12, 0.681)), url("../../images/imagen fondo 1.jpg");
     padding: 15px ;
     gap: 10px;
@@ -135,12 +131,10 @@
         background-color: white;
         border-radius: 10px;
         padding: 15px;
-        box-shadow: 7px 7px 7px #f7401c;
         transition: transform 0.3s ease;
 
         &:hover{
             transform: translateY(-10px);
-            box-shadow: 7px 7px 7px #f4b20c;
         }
 
         .team-content h4,
@@ -158,7 +152,7 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-        box-shadow: 7px 7px 7px  #f4b20c ;
+        
     }
 
     .team-content1 a{

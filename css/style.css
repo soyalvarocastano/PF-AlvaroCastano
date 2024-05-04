@@ -87,7 +87,7 @@
 }
 .hero .hero-content a {
   text-decoration: none;
-  color: black;
+  color: #000000;
   background-color: white;
   border-radius: 10px;
   padding: 10px;
@@ -107,7 +107,7 @@
 }
 
 .services-index {
-  background: linear-gradient(145deg, rgba(50, 3, 104, 0.856), rgba(247, 64, 28, 0.938), rgba(244, 178, 12, 0.681)), url("../../images/imagen fondo 1.jpg");
+  background: linear-gradient(145deg, rgba(50, 3, 104, 0.8549019608), rgba(247, 64, 28, 0.937254902), rgba(244, 178, 12, 0.6823529412)), url("../../images/imagen fondo 1.jpg");
   padding: 15px;
   gap: 10px;
   min-height: 250px;
@@ -136,7 +136,7 @@
   transform: scale(1.2);
 }
 .services-index .service .service-content {
-  color: black;
+  color: #000000;
   text-align: center;
 }
 .services-index .service .service-content .service-content h4 {
@@ -151,7 +151,7 @@
 .service-vermas a {
   text-decoration: none;
   color: white;
-  background-color: black;
+  background-color: #000000;
   border-radius: 10px;
   font-size: 18px;
   padding: 10px;
@@ -210,7 +210,7 @@
 .team .team-content1 a {
   text-decoration: none;
   color: white;
-  background-color: black;
+  background-color: #000000;
   border-radius: 10px;
   padding: 5px;
   text-align: center;
@@ -257,7 +257,7 @@
 }
 
 .services-page {
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
   font-family: "Oswald", sans-serif;
   display: flex;
   flex-direction: column;
@@ -269,7 +269,7 @@
   color: white;
 }
 .services-page .service-page-content1 {
-  background-color: black;
+  background-color: #000000;
   display: flex;
   border-radius: 10px;
   overflow: hidden;
@@ -294,7 +294,7 @@
 }
 
 .team-page {
-  background-color: rgb(0, 0, 0);
+  background-color: #000000;
   font-family: "Oswald", sans-serif;
   display: flex;
   flex-direction: column;
@@ -308,7 +308,7 @@
 .team-page .team-profile {
   display: flex;
   border-radius: 10px;
-  background-color: black;
+  background-color: #000000;
   padding: 15px;
   box-shadow: 7px 7px 7px white;
 }
@@ -328,7 +328,7 @@
 }
 
 .titulo-llamada {
-  background-color: black;
+  background-color: #000000;
   color: white;
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -340,7 +340,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: #000000;
   color: white;
   font-family: "Oswald", sans-serif;
 }
@@ -379,12 +379,12 @@
 }
 .agendar-llamada .tabla-llamada form div input,
 .agendar-llamada .tabla-llamada form div textarea {
-  border: 1px solid #ccc;
+  border: 1px solid white;
   border-radius: 4px;
   box-sizing: border-box;
 }
 .agendar-llamada .tabla-llamada form div button {
-  background-color: black;
+  background-color: #000000;
   color: white;
   border: none;
   border-radius: 4px;

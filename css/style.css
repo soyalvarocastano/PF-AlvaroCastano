@@ -107,17 +107,19 @@
 }
 
 .services-index {
-  background: linear-gradient(145deg, rgba(50, 3, 104, 0.8549019608), rgba(247, 64, 28, 0.937254902), rgba(244, 178, 12, 0.6823529412)), url("../../images/imagen fondo 1.jpg");
+  background: linear-gradient(145deg, rgba(50, 3, 104, 0.8549019608), rgba(247, 64, 28, 0.937254902), rgba(244, 178, 12, 0.6823529412));
   padding: 15px;
   gap: 10px;
   min-height: 250px;
   max-height: 100%;
+  color: white;
 }
 .services-index .service-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 45px;
+  color: white;
 }
 .services-index .service-container .service-title {
   text-align: center;
@@ -136,7 +138,7 @@
   transform: scale(1.2);
 }
 .services-index .service .service-content {
-  color: #000000;
+  color: white;
   text-align: center;
 }
 .services-index .service .service-content .service-content h4 {
@@ -150,8 +152,8 @@
 
 .service-vermas a {
   text-decoration: none;
-  color: white;
-  background-color: #000000;
+  color: #000000;
+  background-color: white;
   border-radius: 10px;
   font-size: 18px;
   padding: 10px;

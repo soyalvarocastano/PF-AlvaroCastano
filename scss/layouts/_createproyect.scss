@@ -12,7 +12,6 @@
     }
 
     .proyecto_1{
-        @include flex(column,center,center);
         border-radius: 10px;
         background: linear-gradient(145deg, $primari-color, $secondary-color);
         padding: 10px;

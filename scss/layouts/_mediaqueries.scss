@@ -12,7 +12,14 @@
     }
   }
 
-  @media (max-width: 950px) {
+@media (max-width:480px) {
+    .service-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 950px) {
     .team {
         grid-template-columns: 1fr; 
     }

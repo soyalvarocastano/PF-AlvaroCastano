@@ -119,7 +119,6 @@
 
 .team{
     background-color: rgb(0, 0, 0);
-    @include grid(grid,repeat(auto-fit, minmax(320px, 1fr)),20px,15px); 
     
 
     .team-title{
@@ -128,47 +127,45 @@
         text-align: center;
     }
 
-    .team-content{
-        background-color: $secondary-base-color;
-        border-radius: 10px;
-        padding: 15px;
-        transition: transform 0.3s ease;
+    .team-grid{
+        @include grid(grid,repeat(auto-fit, minmax(320px, 1fr)),20px,15px); 
 
-        &:hover{
-            transform: translateY(-10px);
-        }
-
-        .team-content h4,
-        .team-content h3,
-        .team-content p {
-            margin: 5px; 
-            font-size: 16px;
-        }       
-    }
-
-    .team-content1{
-        background-color: $secondary-base-color;
-        border-radius: 10px;
-        padding: 15px;
-        gap: 10px;
-        
-    }
-
-    .team-content1 a{
-        text-decoration: none;
-        color: $secondary-base-color;
-        background-color: $base-color;
-        border-radius: 10px;
-        padding: 5px;
-        text-align: center;
-        }
-
-    .team-content img{
-            max-width: 100%;
-            height: 480px;
-            object-fit: cover;
+        .team-content{
+            background-color: $secondary-base-color;
             border-radius: 10px;
+            padding: 15px;
+            transition: transform 0.3s ease;
+    
+            &:hover{
+                transform: translateY(-10px);
+            }
+    
+            .team-content h4,
+            .team-content h3,
+            .team-content p {
+                margin: 5px; 
+                font-size: 16px;
+            }       
         }
+    
+        .team-content a{
+            text-decoration: none;
+            color: $secondary-base-color;
+            background-color: $base-color;
+            border-radius: 10px;
+            padding: 5px;
+            text-align: center;
+            }
+    
+        .team-content img{
+                max-width: 100%;
+                height: 480px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+    }
+
+    
 }
 
 

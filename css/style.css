@@ -172,38 +172,34 @@
 
 .team {
   background-color: rgb(0, 0, 0);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  padding: 20px;
-  gap: 15px;
 }
 .team .team-title {
   color: white;
   grid-column: span 4;
   text-align: center;
 }
-.team .team-content {
+.team .team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding: 20px;
+  gap: 15px;
+}
+.team .team-grid .team-content {
   background-color: white;
   border-radius: 10px;
   padding: 15px;
   transition: transform 0.3s ease;
 }
-.team .team-content:hover {
+.team .team-grid .team-content:hover {
   transform: translateY(-10px);
 }
-.team .team-content .team-content h4,
-.team .team-content .team-content h3,
-.team .team-content .team-content p {
+.team .team-grid .team-content .team-content h4,
+.team .team-grid .team-content .team-content h3,
+.team .team-grid .team-content .team-content p {
   margin: 5px;
   font-size: 16px;
 }
-.team .team-content1 {
-  background-color: white;
-  border-radius: 10px;
-  padding: 15px;
-  gap: 10px;
-}
-.team .team-content1 a {
+.team .team-grid .team-content a {
   text-decoration: none;
   color: white;
   background-color: #000000;
@@ -211,7 +207,7 @@
   padding: 5px;
   text-align: center;
 }
-.team .team-content img {
+.team .team-grid .team-content img {
   max-width: 100%;
   height: 480px;
   object-fit: cover;
